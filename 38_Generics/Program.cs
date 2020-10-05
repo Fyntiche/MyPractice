@@ -5,6 +5,7 @@ namespace _38_Generics
     public interface IFont
     {
         string Name();
+
         int FontSize();
     }
 
@@ -21,10 +22,10 @@ namespace _38_Generics
         void MyFontInfo(T obj);
     }
 
-    class Font : IFontInfo<Font>
+    internal class Font : IFontInfo<Font>
     {
-        string name;
-        int fontsize;
+        private string name;
+        private int fontsize;
 
         public Font(string name, int fontsize)
         {
@@ -45,16 +46,16 @@ namespace _38_Generics
 
         public virtual void MyFontInfo(Font obj)
         {
-            Console.WriteLine(@"Информация о шрифте 
-                __________________ 
+            Console.WriteLine(@"Информация о шрифте
+                __________________
                 Название:{0}
                 Размер: {1}px", obj.Name(), obj.FontSize());
         }
     }
 
-    class FontColor : Font, IFontColor<FontColor>
+    internal class FontColor : Font, IFontColor<FontColor>
     {
-        string color;
+        private string color;
 
         public FontColor(string name, int fontsize, string color)
             : base(name, fontsize)
@@ -75,9 +76,9 @@ namespace _38_Generics
         }
     }
 
-    class Program
+    internal class Program
     {
-        static void Main()
+        private static void Main()
         {
             // Создадим экземпляр класса Font, ссылающийся
             // на класс FontColor благодаря ковариантности

@@ -2,7 +2,7 @@
 
 namespace _28_Delegates
 {
-    class MyClass
+    internal class MyClass
     {
         public void Method1()
         {
@@ -22,10 +22,9 @@ namespace _28_Delegates
 
     public delegate void MyDelegate();
 
-
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             MyClass myClass = new MyClass();
             MyDelegate myDelegate = null;
@@ -44,15 +43,19 @@ namespace _28_Delegates
                 case "1":
                     myDelegate1();
                     break;
+
                 case "2":
                     myDelegate2();
                     break;
+
                 case "3":
                     myDelegate3();
                     break;
+
                 case "4":
                     myDelegate();
                     break;
+
                 default:
                     break;
             }

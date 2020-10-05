@@ -1,10 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace _16_Interfaces
 {
-    class DerivedClass : BaseClass, Interface1, Interface2
+    internal class DerivedClass : BaseClass, Interface1, Interface2
     {
         public void Method1(int a)
         {

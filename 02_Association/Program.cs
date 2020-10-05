@@ -2,9 +2,9 @@
 
 namespace _02_Association
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             Factory factory = new Factory();
             Product product = factory.FactoryMethod();

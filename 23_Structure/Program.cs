@@ -2,15 +2,14 @@
 
 namespace _23_Structure
 {
-
-    struct MyStruct
+    internal struct MyStruct
     {
         public int field;
     }
 
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             MyStruct myStruct;
             myStruct.field = 5;

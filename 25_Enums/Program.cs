@@ -2,15 +2,16 @@
 
 namespace _25_Enums
 {
-    enum EnumType : byte
+    internal enum EnumType : byte
     {
         one,
         two,
         three
     }
-    class Program
+
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             Console.WriteLine(EnumType.one);
             Console.WriteLine((byte)EnumType.one);

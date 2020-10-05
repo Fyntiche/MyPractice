@@ -2,9 +2,9 @@
 
 namespace _14_Boxing
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             short a = 25;
 

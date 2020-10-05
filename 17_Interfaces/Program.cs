@@ -2,12 +2,12 @@
 
 namespace _17_Interfaces
 {
-    abstract class  AbsractClass : Interface1
+    internal abstract class AbsractClass : Interface1
     {
         public abstract void Method();
     }
 
-    class Class1 : AbsractClass
+    internal class Class1 : AbsractClass
     {
         public override void Method()
         {
@@ -15,9 +15,9 @@ namespace _17_Interfaces
         }
     }
 
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             Class1 class1 = new Class1();
             class1.Method();

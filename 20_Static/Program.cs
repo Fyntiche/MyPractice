@@ -2,9 +2,9 @@
 
 namespace _20_Static
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             NoStaticClass noStatic = new NoStaticClass(3);
             NoStaticClass.Field = 5;

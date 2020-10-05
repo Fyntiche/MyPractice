@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace _17_Interfaces
+﻿namespace _17_Interfaces
 {
-    interface Interface1
+    internal interface Interface1
     {
         void Method();
     }

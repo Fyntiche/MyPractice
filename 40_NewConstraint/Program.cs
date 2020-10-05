@@ -1,8 +1,9 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace _40_NewConstraint
 {
-    class MyClass<T> where T : new()
+    internal class MyClass<T> where T : new()
     {
         public T variable = new T();
 
@@ -12,7 +13,7 @@ namespace _40_NewConstraint
         }
     }
 
-    class MyTest
+    internal class MyTest
     {
         public int MyVariable = 1;
         public int MyVariable1 = 2;
@@ -22,13 +23,15 @@ namespace _40_NewConstraint
             return string.Format("{0} - {1}", MyVariable1, MyVariable);
         }
     }
-    class Program
+
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             MyClass<MyTest> myClass = new MyClass<MyTest>();
             myClass.GetType();
             Console.ReadLine();
+            List<int> a = new List<int>();
         }
     }
 }

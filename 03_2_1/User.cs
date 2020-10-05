@@ -1,10 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace _03_2_1
 {
-    class User
+    internal class User
     {
         public string login;
 
@@ -14,7 +12,7 @@ namespace _03_2_1
 
         public int age;
 
-        readonly DateTime date;
+        private readonly DateTime date;
 
         public User()
         {
@@ -23,7 +21,7 @@ namespace _03_2_1
 
         public override string ToString()
         {
-            return name + " " + surname + " " + age + " " + login + " "+ date;
+            return name + " " + surname + " " + age + " " + login + " " + date;
         }
     }
 }

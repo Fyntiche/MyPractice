@@ -3,9 +3,10 @@
 namespace _31_Delegates
 {
     public delegate void MySum(ref int a, ref int b, out int summa);
-    class Program
+
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             int a = 5, b = 6, summa;
             MySum mySum = delegate (ref int a, ref int b, out int c) { a++; b++; c = a + b; };

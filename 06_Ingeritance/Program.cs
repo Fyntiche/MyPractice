@@ -1,11 +1,10 @@
-﻿using _06_Inheritance;
-using System;
+﻿using System;
 
 namespace _06_Inheritance
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             BaseClass baseClass = new BaseClass();
             DerivedClass derivedClass = new DerivedClass();

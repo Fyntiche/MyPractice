@@ -2,13 +2,12 @@
 
 namespace _11_Abstraction
 {
-
-    abstract class AbstractClass
+    internal abstract class AbstractClass
     {
         public abstract void Method();
     }
 
-    class MyClass1 : AbstractClass
+    internal class MyClass1 : AbstractClass
     {
         public override void Method()
         {
@@ -16,7 +15,7 @@ namespace _11_Abstraction
         }
     }
 
-    class MyClass3 : MyClass1
+    internal class MyClass3 : MyClass1
     {
         public override void Method()
         {
@@ -24,16 +23,17 @@ namespace _11_Abstraction
         }
     }
 
-    class MyClass2 : AbstractClass
+    internal class MyClass2 : AbstractClass
     {
         public override void Method()
         {
             Console.WriteLine("Class2");
         }
     }
-    class Program
+
+    internal class Program
     {
-        static void Main()
+        private static void Main()
         {
             AbstractClass myClass1 = new MyClass1();
             AbstractClass myClass2 = new MyClass2();

@@ -2,9 +2,9 @@
 
 namespace _21_Singleton
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             Singleton singleton = Singleton.Instance();
             Singleton singleton1 = Singleton.Instance();

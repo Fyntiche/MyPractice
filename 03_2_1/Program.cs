@@ -2,9 +2,9 @@
 
 namespace _03_2_1
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             User user = new User();
             user.age = 18;

@@ -2,7 +2,7 @@
 
 namespace _26_Delegates
 {
-    class MyClass
+    internal class MyClass
     {
         public void Method()
         {
@@ -12,9 +12,9 @@ namespace _26_Delegates
 
     public delegate void MyDelegate();
 
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             MyClass myClass = new MyClass();
             MyDelegate @delegate = new MyDelegate(myClass.Method);
@@ -22,7 +22,6 @@ namespace _26_Delegates
             @delegate.Invoke();
             @delegate();
             Console.ReadKey();
-
         }
     }
 }

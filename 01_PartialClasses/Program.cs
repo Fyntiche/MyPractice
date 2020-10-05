@@ -1,13 +1,11 @@
 ﻿using _01_PartialClasses.PartialClasses;
 using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace _01_PartialClasses
 {
-    class Program
+    internal class Program
     {
-        static void Main()
+        private static void Main()
         {
             PartialClass partialClass = new PartialClass();
             partialClass.PrintPC1();

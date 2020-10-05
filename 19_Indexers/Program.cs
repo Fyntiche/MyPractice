@@ -2,7 +2,7 @@
 
 namespace _19_Indexers
 {
-    class MyClass
+    internal class MyClass
     {
         private string[] my = { "1", "2", "3", "4", "5" };
 
@@ -14,9 +14,8 @@ namespace _19_Indexers
                 {
                     return my[index];
                 }
-                else 
+                else
                     return "Попытка обращения за пределы массива";
-               
             }
             set
             {
@@ -30,9 +29,9 @@ namespace _19_Indexers
         }
     }
 
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             MyClass myClass = new MyClass();
             Console.WriteLine(myClass[4]);

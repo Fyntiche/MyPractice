@@ -1,10 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace _16_Interfaces
 {
-    class BaseClass
+    internal class BaseClass
     {
         public void Method3()
         {

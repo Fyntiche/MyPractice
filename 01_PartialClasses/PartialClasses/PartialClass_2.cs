@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace _01_PartialClasses.PartialClasses
 {
@@ -10,7 +8,9 @@ namespace _01_PartialClasses.PartialClasses
         {
             field = "2";
         }
+
         public readonly string field;
+
         public void PrintPC2()
         {
             Console.WriteLine("Partial class 2");
@@ -25,6 +25,5 @@ namespace _01_PartialClasses.PartialClasses
         {
             PrintPC3();
         }
-
     }
 }

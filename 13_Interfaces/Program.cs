@@ -2,22 +2,22 @@
 
 namespace _13_Interfaces
 {
-    interface IInteface
+    internal interface IInteface
     {
         void Method();
     }
 
-
-    class MyClass : IInteface
+    internal class MyClass : IInteface
     {
         public void Method()
         {
             Console.WriteLine("Method");
         }
     }
-    class Program
+
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             IInteface myClass = new MyClass();
             myClass.Method();

@@ -2,8 +2,7 @@
 
 namespace _24_ArrayCovariant
 {
-
-    interface IVoice
+    internal interface IVoice
     {
         void Voice();
     }
@@ -16,13 +15,13 @@ namespace _24_ArrayCovariant
         }
     }
 
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             Dog[] dogs = { new Dog(), new Dog(), new Dog() };
 
-           // IVoice[] animal = dogs; Error
+            // IVoice[] animal = dogs; Error
         }
     }
 }

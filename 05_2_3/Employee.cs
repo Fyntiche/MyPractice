@@ -1,17 +1,15 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace _05_2_3
 {
-    class Employee
+    internal class Employee
     {
-        readonly string name;
+        private readonly string name;
 
-        readonly string surname;
-        public int staj=1;
+        private readonly string surname;
+        public int staj = 1;
 
-        public int oklad=500;
+        public int oklad = 500;
 
         public int Staj
         {
@@ -31,9 +29,7 @@ namespace _05_2_3
 
         public void Oklad()
         {
-            Console.WriteLine(name + " " + surname + " "+staj + " " + oklad*staj);
+            Console.WriteLine(name + " " + surname + " " + staj + " " + oklad * staj);
         }
-
-
     }
 }

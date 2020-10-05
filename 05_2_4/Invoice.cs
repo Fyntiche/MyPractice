@@ -1,14 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace _05_2_4
+﻿namespace _05_2_4
 {
-    class Invoice
+    internal class Invoice
     {
-        readonly int account;
-        readonly string customer;
-        readonly string provider;
+        private readonly int account;
+        private readonly string customer;
+        private readonly string provider;
 
         private string article;
         private int quantity;
@@ -19,9 +15,5 @@ namespace _05_2_4
             this.customer = customer;
             this.provider = provider;
         }
-
-
-
-
     }
 }

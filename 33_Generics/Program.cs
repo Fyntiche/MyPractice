@@ -2,7 +2,7 @@
 
 namespace _33_Generics
 {
-    class MyClass<T>
+    internal class MyClass<T>
     {
         public T field;
 
@@ -11,9 +11,10 @@ namespace _33_Generics
             Console.WriteLine(field.GetType());
         }
     }
-    class Program
+
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             MyClass<int> myClass = new MyClass<int>();
             myClass.Method();

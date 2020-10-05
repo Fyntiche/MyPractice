@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace _02_Association
+﻿namespace _02_Association
 {
-    class Factory
+    internal class Factory
     {
         public Product FactoryMethod()
         {

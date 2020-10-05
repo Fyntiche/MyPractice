@@ -3,8 +3,9 @@
 namespace _37_Generics
 {
     public abstract class Shape { };
+
     public class Circle : Shape { }
-    
+
     public interface IFigure<T>
     {
         T Figure { get; set; }
@@ -18,13 +19,11 @@ namespace _37_Generics
         {
             this.Figure = figure;
         }
-       
     }
 
-    class Program
+    internal class Program
     {
-        
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             Circle circle = new Circle();
             IFigure<Circle> Figure = new Container<Circle>(circle);

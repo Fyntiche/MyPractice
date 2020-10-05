@@ -1,14 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace _04_2_2
 {
-    class Converter
+    internal class Converter
     {
-        readonly double usd;
-        readonly double eur;
-        readonly double rub;
+        private readonly double usd;
+        private readonly double eur;
+        private readonly double rub;
 
         public Converter(double usd, double eur, double rub)
         {

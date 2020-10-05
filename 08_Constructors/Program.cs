@@ -2,9 +2,9 @@
 
 namespace _08_Constructors
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             DerivedClass derivedClass = new DerivedClass(1, 2);
 

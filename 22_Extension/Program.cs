@@ -2,7 +2,7 @@
 
 namespace _22_Extension
 {
-    static class ExtensionClass
+    internal static class ExtensionClass
     {
         public static void ExtensionMethod(this string value)
         {
@@ -10,26 +10,27 @@ namespace _22_Extension
         }
     }
 
-    class Person
+    internal class Person
     {
         public int Age = 10;
     }
 
-    static class ExtensionClassPerson
+    internal static class ExtensionClassPerson
     {
         public static void ExtensionPerson(this Person person)
         {
             Console.WriteLine(person.Age);
         }
+
         public static void ExtensionPerson2(this Person person, string value)
         {
             Console.WriteLine(person.Age + value);
         }
     }
 
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             string text = "test";
 
@@ -42,8 +43,6 @@ namespace _22_Extension
             person.ExtensionPerson2(" test");
 
             Console.ReadKey();
-
-            
         }
     }
 }

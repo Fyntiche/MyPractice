@@ -2,9 +2,9 @@
 
 namespace _14_Interfaces
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             Interface1 instance1 = new DerivedClass();
             Interfaces2 instance2 = new DerivedClass();

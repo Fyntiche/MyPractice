@@ -2,10 +2,9 @@
 
 namespace _15_Interfaces
 {
-
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             DerivedClass derivedClass = new DerivedClass();
             Interface1 instance1 = new DerivedClass();

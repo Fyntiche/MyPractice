@@ -1,10 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace _20_Static
 {
-    class NoStaticClass
+    internal class NoStaticClass
     {
         private int Id;
         public static int Field;

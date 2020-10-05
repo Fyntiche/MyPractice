@@ -2,9 +2,9 @@
 
 namespace _05_2_3
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             Employee employee = new Employee("ivan", "eremov");
             Console.WriteLine("Введите стаж");
