@@ -4,7 +4,7 @@ namespace _09_Inheritance
 {
     internal class DerivedClass : BaseClass
     {
-        public void Method()
+        public new void Method()
         {
             Console.WriteLine("Method from DerivedClass");
         }
