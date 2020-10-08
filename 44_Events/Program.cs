@@ -3,12 +3,15 @@
 namespace _44_Events
 {
     public delegate void MyDelegate();
-    interface EventInteface
+
+    internal interface EventInteface
     {
         event MyDelegate MyEvent;
+
+        void EventVoid();
     }
 
-    class BaseClass : EventInteface
+    internal class BaseClass : EventInteface
     {
         private MyDelegate eventDelegate = null;
 
@@ -23,13 +26,14 @@ namespace _44_Events
                 eventDelegate -= value;
             }
         }
-        public void MyEventInvoke()
+
+        public void EventVoid()
         {
             eventDelegate.Invoke();
         }
     }
 
-    class DerivedClass : BaseClass
+    internal class DerivedClass : BaseClass
     {
         public override event MyDelegate MyEvent
         {
@@ -46,7 +50,8 @@ namespace _44_Events
             }
         }
     }
-    class Program
+
+    internal class Program
     {
         public static void Handler1()
         {
@@ -58,21 +63,21 @@ namespace _44_Events
             Console.WriteLine("Handler2");
         }
 
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             BaseClass baseClass = new BaseClass();
             baseClass.MyEvent += Handler1;
             baseClass.MyEvent += Handler2;
-            baseClass.MyEventInvoke();
+            baseClass.EventVoid();
             Console.WriteLine(new string('_', 50));
             DerivedClass derivedClass = new DerivedClass();
             derivedClass.MyEvent += Handler2;
-            derivedClass.MyEventInvoke();
+            derivedClass.EventVoid();
             Console.WriteLine(new string('_', 50));
             DerivedClass derivedClass1 = new DerivedClass();
             derivedClass1.MyEvent += Handler1;
             derivedClass1.MyEvent += Handler2;
-            derivedClass1.MyEventInvoke();
+            derivedClass1.EventVoid();
             Console.ReadKey();
         }
     }
