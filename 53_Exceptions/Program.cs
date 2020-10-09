@@ -8,12 +8,12 @@ namespace _53_Exceptions
         private static void Main(string[] args)
         {
             Exception exception = new Exception("My exception");
-            exception.Data.Add("para", "erroes");
+            exception.Data.Add("para", "errors");
 
             try
             {
                 throw exception;
-                //throw new Exception("Exeptions 2");
+                //throw new Exception("Exceptions 2");
             }
             catch (Exception e)
             {
